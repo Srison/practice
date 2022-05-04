@@ -1,0 +1,14 @@
+<html>
+<head>
+<title>Border style</title>
+<style type="text/css">
+h4.dotted{border-style:dotted, font-size:35px;}
+h4.double{border-style:double, font-size:35px;}
+h4.groove{border-style:groove, font-size:35px;}
+h4.ridge{border-style:ridge, font-size:35px;}
+h4.dashed{border-style:dashed, font-size:35px;}
+</style>
+</head>
+<h4 class="dotted">Hi
+</body>
+</html>

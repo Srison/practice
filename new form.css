@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>Form</title>
+<script type="text/javascript">
+function fun()
+{
+var mypwd=document.getElementById("pwd");
+var myrepwd=document.getElementById("repwd");
+if(mypwd.value=="")
+{
+alert("You must enter the password");
+mypwd.focus();
+return false;
+}
+if(mypwd.value !=myrepwd.value)
+{
+alert("password wrong");
+mypwd.focus();
+mypwd.select();
+return  false;
+}
+if(mypwd.value==myrepwd.value)
+{
+alert("Congratulations");
+return true;
+}
+}
+</script>
+</head>
+<body bgcolor=pink>
+<center>Form</center>
+<b>Name:</b><input type="text" placeholder="Enter your Name"><br><br>
+<b>User ID:</b><input type="text"><br><br>
+<b>password:</b><input type="password"><br><br>
+<a href="forms.html">Forget password?</a><br><br>
+<b>Phone number:</b><input type="number">&nbsp;&nbsp;&nbsp;&nbsp;
+<b>WhatsApp number:</b><input type="number"><br>
+
+<form id="form">
+<label>Enter the password
+<input type="password" value=""id="pwd"/>
+</label>
+<br><br>
+<label>Re Enter the password
+<input type="password" value=""id="repwd" onblur="fun();"/>
+</label>
+<br><br>
+<input type="Submit" value="Submit" name="Submit" onsubmit="fun();"/>
+<input type="Reset" value="Reset" name="Reset"/>
+</form>
+</body>
+</html>
